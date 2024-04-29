@@ -22,7 +22,7 @@
                   <Font name="Rage Italic" size="40.0" />
                </font>
                <graphic>
-                  <ImageView fitHeight="55.0" fitWidth="55.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fitHeight="55.0" fitWidth="64.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@../img/sound-wave.png" />
                      </image>
@@ -76,18 +76,6 @@
                         <Font name="Berlin Sans FB" size="18.0" />
                      </font>
                   </Button>
-                  <Button alignment="TOP_LEFT" mnemonicParsing="false" prefHeight="34.0" prefWidth="202.0" style="-fx-background-color: transparent;" styleClass="mouse-moved" text="Download" textFill="#d7d7d7">
-                     <graphic>
-                        <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
-                           <image>
-                              <Image url="@../img/down.png" />
-                           </image>
-                        </ImageView>
-                     </graphic>
-                     <font>
-                        <Font name="Berlin Sans FB" size="18.0" />
-                     </font>
-                  </Button>
                </children>
                <padding>
                   <Insets left="10.0" />
@@ -100,11 +88,11 @@
                         <Font name="Berlin Sans FB" size="25.0" />
                      </font>
                   </Label>
-                  <Button alignment="TOP_LEFT" mnemonicParsing="false" prefHeight="63.0" prefWidth="200.0" style="-fx-background-color: transparent;" styleClass="mouse-moved" stylesheets="@../css/style.css" text="New Song" textFill="#d7d7d7">
+                  <Button alignment="TOP_LEFT" mnemonicParsing="false" prefHeight="63.0" prefWidth="200.0" style="-fx-background-color: transparent;" styleClass="mouse-moved" stylesheets="@../css/style.css" text="Songs" textFill="#d7d7d7">
                      <graphic>
                         <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
                            <image>
-                              <Image url="@../img/new.png" />
+                              <Image url="@../img/song1.png" />
                            </image>
                         </ImageView>
                      </graphic>
@@ -112,11 +100,11 @@
                         <Font name="Berlin Sans FB" size="18.0" />
                      </font>
                   </Button>
-                  <Button alignment="TOP_LEFT" mnemonicParsing="false" prefHeight="34.0" prefWidth="202.0" style="-fx-background-color: transparent;" styleClass="mouse-moved" stylesheets="@../css/style.css" text="Kind of Music" textFill="#d7d7d7">
+                  <Button alignment="TOP_LEFT" mnemonicParsing="false" prefHeight="34.0" prefWidth="202.0" style="-fx-background-color: transparent;" styleClass="mouse-moved" stylesheets="@../css/style.css" text="Albums" textFill="#d7d7d7">
                      <graphic>
                         <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
                            <image>
-                              <Image url="@../img/kindofmusic.png" />
+                              <Image url="@../img/album.png" />
                            </image>
                         </ImageView>
                      </graphic>
@@ -124,11 +112,11 @@
                         <Font name="Berlin Sans FB" size="18.0" />
                      </font>
                   </Button>
-                  <Button alignment="TOP_LEFT" mnemonicParsing="false" prefHeight="34.0" prefWidth="202.0" style="-fx-background-color: transparent;" styleClass="mouse-moved" stylesheets="@../css/style.css" text="Top 10" textFill="#d7d7d7">
+                  <Button alignment="TOP_LEFT" mnemonicParsing="false" prefHeight="34.0" prefWidth="202.0" style="-fx-background-color: transparent;" styleClass="mouse-moved" stylesheets="@../css/style.css" text="Artists" textFill="#d7d7d7">
                      <graphic>
                         <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
                            <image>
-                              <Image url="@../img/chart.png" />
+                              <Image url="@../img/artists.png" />
                            </image>
                         </ImageView>
                      </graphic>
@@ -164,7 +152,7 @@
                <children>
                   <HBox alignment="CENTER" maxHeight="-Infinity" prefHeight="35.0" prefWidth="334.0" styleClass="search-container" stylesheets="@../css/style.css">
                      <children>
-                        <TextField prefHeight="26.0" prefWidth="271.0" promptText="Search" style="-fx-background-color: transparent;" />
+                        <TextField prefHeight="26.0" prefWidth="262.0" promptText="Search" style="-fx-background-color: transparent;" />
                         <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
                            <image>
                               <Image url="@../img/search.png" />
@@ -172,7 +160,7 @@
                         </ImageView>
                      </children>
                      <HBox.margin>
-                        <Insets left="5.0" />
+                        <Insets left="20.0" />
                      </HBox.margin>
                   </HBox>
                   <Pane prefHeight="58.0" prefWidth="249.0" HBox.hgrow="ALWAYS" />
@@ -181,7 +169,7 @@
                      <children>
                         <Button mnemonicParsing="false" style="-fx-background-color: transparent;" text="Lee Ly" textFill="WHITE">
                            <graphic>
-                              <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                              <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
                                  <image>
                                     <Image url="@../img/ly.png" />
                                  </image>
@@ -195,15 +183,7 @@
                   </HBox>
                </children>
             </HBox>
-            <VBox alignment="CENTER" prefHeight="490.0" prefWidth="800.0">
-               <children>
-                  <ImageView fitHeight="371.0" fitWidth="360.0" pickOnBounds="true" preserveRatio="true" smooth="false">
-                     <image>
-                        <Image url="@../img/lee.jpg" />
-                     </image>
-                  </ImageView>
-               </children>
-            </VBox>
+            <VBox alignment="CENTER" prefHeight="490.0" prefWidth="800.0" />
          </children>
       </VBox>
    </center>
@@ -221,7 +201,7 @@
                      <children>
                         <Label prefHeight="27.0" prefWidth="114.0" text="Lydepgai" textFill="WHITE">
                            <font>
-                              <Font size="18.0" />
+                              <Font name="Berlin Sans FB" size="18.0" />
                            </font>
                         </Label>
                         <Label prefHeight="26.0" prefWidth="101.0" text="s1" textFill="WHITE">
@@ -231,11 +211,15 @@
                         </Label>
                      </children>
                   </VBox>
-                  <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@../img/ic_love.png" />
-                     </image>
-                  </ImageView>
+                  <Button mnemonicParsing="false" style="-fx-background-color: transparent;">
+                     <graphic>
+                        <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="file:/C:/Users/TechCare/IdeaProjects/Spotify/src/main/resources/music/img/ic_love.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
                </children>
             </HBox>
             <Pane prefHeight="74.0" prefWidth="0.0" HBox.hgrow="ALWAYS" />
