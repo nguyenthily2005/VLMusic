@@ -31,7 +31,7 @@
             </Label>
             <VBox prefHeight="31.0" prefWidth="200.0">
                <children>
-                  <Button mnemonicParsing="false" prefHeight="40.0" prefWidth="203.0" style="-fx-background-color: transparent;" styleClass="mouse-moved" stylesheets="@../css/style.css" text="Home" textFill="#d7d7d7">
+                  <Button alignment="TOP_LEFT" mnemonicParsing="false" prefHeight="40.0" prefWidth="203.0" style="-fx-background-color: transparent;" styleClass="mouse-moved" stylesheets="@../css/style.css" text="Home" textFill="#d7d7d7">
                      <graphic>
                         <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
                            <image>
