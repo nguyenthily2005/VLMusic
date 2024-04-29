@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1000.0" styleClass="primary_color" stylesheets="@../css/style.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+   <left>
+      <VBox prefHeight="200.0" prefWidth="200.0" spacing="20.0" styleClass="secondary-color" stylesheets="@../css/style.css" BorderPane.alignment="CENTER">
+         <children>
+            <Label alignment="CENTER" prefHeight="58.0" prefWidth="200.0" text="VLMusic" textFill="WHITE">
+               <font>
+                  <Font name="Rage Italic" size="40.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="55.0" fitWidth="55.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/sound-wave.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Label>
+            <VBox prefHeight="31.0" prefWidth="200.0">
+               <children>
+                  <Button mnemonicParsing="false" prefHeight="40.0" prefWidth="203.0" style="-fx-background-color: transparent;" styleClass="mouse-moved" stylesheets="@../css/style.css" text="Home" textFill="#d7d7d7">
+                     <graphic>
+                        <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../img/music.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font name="Berlin Sans FB" size="25.0" />
+                     </font>
+                  </Button>
+               </children>
+            </VBox>
+            <VBox prefHeight="133.0" prefWidth="200.0" spacing="8.0" stylesheets="@../css/style.css">
+               <children>
+                  <Label alignment="TOP_LEFT" prefHeight="30.0" prefWidth="205.0" text="Library" textFill="#d7d7d7">
+                     <font>
+                        <Font name="Berlin Sans FB" size="25.0" />
+                     </font>
+                  </Label>
+                  <Button alignment="TOP_LEFT" mnemonicParsing="false" prefHeight="63.0" prefWidth="200.0" style="-fx-background-color: transparent;" styleClass="mouse-moved" stylesheets="@../css/style.css" text="Favorite" textFill="#d7d7d7">
+                     <graphic>
+                        <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../img/favorite.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font name="Berlin Sans FB" size="18.0" />
+                     </font>
+                  </Button>
+                  <Button alignment="TOP_LEFT" mnemonicParsing="false" prefHeight="34.0" prefWidth="202.0" style="-fx-background-color: transparent;" styleClass="mouse-moved" stylesheets="@../css/style.css" text="Playlist" textFill="#d7d7d7">
+                     <graphic>
+                        <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../img/playlist.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font name="Berlin Sans FB" size="18.0" />
+                     </font>
+                  </Button>
+                  <Button alignment="TOP_LEFT" mnemonicParsing="false" prefHeight="34.0" prefWidth="202.0" style="-fx-background-color: transparent;" styleClass="mouse-moved" text="Download" textFill="#d7d7d7">
+                     <graphic>
+                        <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../img/down.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font name="Berlin Sans FB" size="18.0" />
+                     </font>
+                  </Button>
+               </children>
+               <padding>
+                  <Insets left="10.0" />
+               </padding>
+            </VBox>
+            <VBox alignment="CENTER_LEFT" prefHeight="133.0" prefWidth="200.0" spacing="8.0">
+               <children>
+                  <Label alignment="TOP_LEFT" prefHeight="30.0" prefWidth="205.0" text="Explore" textFill="#d7d7d7">
+                     <font>
+                        <Font name="Berlin Sans FB" size="25.0" />
+                     </font>
+                  </Label>
+                  <Button alignment="TOP_LEFT" mnemonicParsing="false" prefHeight="63.0" prefWidth="200.0" style="-fx-background-color: transparent;" styleClass="mouse-moved" stylesheets="@../css/style.css" text="New Song" textFill="#d7d7d7">
+                     <graphic>
+                        <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../img/new.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font name="Berlin Sans FB" size="18.0" />
+                     </font>
+                  </Button>
+                  <Button alignment="TOP_LEFT" mnemonicParsing="false" prefHeight="34.0" prefWidth="202.0" style="-fx-background-color: transparent;" styleClass="mouse-moved" stylesheets="@../css/style.css" text="Kind of Music" textFill="#d7d7d7">
+                     <graphic>
+                        <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../img/kindofmusic.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font name="Berlin Sans FB" size="18.0" />
+                     </font>
+                  </Button>
+                  <Button alignment="TOP_LEFT" mnemonicParsing="false" prefHeight="34.0" prefWidth="202.0" style="-fx-background-color: transparent;" styleClass="mouse-moved" stylesheets="@../css/style.css" text="Top 10" textFill="#d7d7d7">
+                     <graphic>
+                        <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../img/chart.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font name="Berlin Sans FB" size="18.0" />
+                     </font>
+                  </Button>
+               </children>
+               <padding>
+                  <Insets left="10.0" />
+               </padding>
+            </VBox>
+            <Pane prefHeight="242.0" prefWidth="200.0" VBox.vgrow="ALWAYS" />
+            <Button mnemonicParsing="false" prefHeight="29.0" prefWidth="203.0" style="-fx-background-color: transparent;" styleClass="click" text="New playlist" textFill="#d7d7d7">
+               <graphic>
+                  <ImageView fitHeight="15.0" fitWidth="15.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/ic_add.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font name="System Bold Italic" size="13.0" />
+               </font>
+            </Button>
+         </children>
+      </VBox>
+   </left>
+   <center>
+      <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+         <children>
+            <HBox alignment="CENTER_LEFT" prefHeight="56.0" prefWidth="740.0" spacing="20.0">
+               <children>
+                  <HBox alignment="CENTER" maxHeight="-Infinity" prefHeight="35.0" prefWidth="334.0" styleClass="search-container" stylesheets="@../css/style.css">
+                     <children>
+                        <TextField prefHeight="26.0" prefWidth="271.0" promptText="Search" style="-fx-background-color: transparent;" />
+                        <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../img/search.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                     <HBox.margin>
+                        <Insets left="5.0" />
+                     </HBox.margin>
+                  </HBox>
+                  <Pane prefHeight="58.0" prefWidth="249.0" HBox.hgrow="ALWAYS" />
+                  <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="120.0" styleClass="upgrade-button" stylesheets="@../css/style.css" text="UPGRADE" textFill="WHITE" />
+                  <HBox alignment="CENTER" prefHeight="58.0" prefWidth="148.0" spacing="10.0">
+                     <children>
+                        <Button mnemonicParsing="false" style="-fx-background-color: transparent;" text="Lee Ly" textFill="WHITE">
+                           <graphic>
+                              <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../img/ly.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <font>
+                              <Font name="Berlin Sans FB" size="12.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </HBox>
+               </children>
+            </HBox>
+            <VBox alignment="CENTER" prefHeight="490.0" prefWidth="800.0">
+               <children>
+                  <ImageView fitHeight="371.0" fitWidth="360.0" pickOnBounds="true" preserveRatio="true" smooth="false">
+                     <image>
+                        <Image url="@../img/lee.jpg" />
+                     </image>
+                  </ImageView>
+               </children>
+            </VBox>
+         </children>
+      </VBox>
+   </center>
+   <bottom>
+      <HBox prefHeight="74.0" prefWidth="1000.0" styleClass="secondary-color" stylesheets="@../css/style.css" BorderPane.alignment="CENTER">
+         <children>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="254.0" spacing="20.0">
+               <children>
+                  <ImageView fitHeight="60.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/lee.jpg" />
+                     </image>
+                  </ImageView>
+                  <VBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="112.0">
+                     <children>
+                        <Label prefHeight="27.0" prefWidth="114.0" text="Lydepgai" textFill="WHITE">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <Label prefHeight="26.0" prefWidth="101.0" text="s1" textFill="WHITE">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+                  <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/ic_love.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </HBox>
+            <Pane prefHeight="74.0" prefWidth="0.0" HBox.hgrow="ALWAYS" />
+            <VBox alignment="CENTER" prefHeight="100.0" prefWidth="558.0">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="86.0" prefWidth="558.0" spacing="15.0">
+                     <children>
+                        <Button mnemonicParsing="false" prefHeight="20.0" prefWidth="29.0" style="-fx-background-color: transparent;">
+                           <graphic>
+                              <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../img/ic_shuffle.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Button mnemonicParsing="false" prefHeight="20.0" prefWidth="29.0" style="-fx-background-color: transparent;">
+                           <graphic>
+                              <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../img/ic_skip_to_start.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Button mnemonicParsing="false" prefHeight="20.0" prefWidth="29.0" style="-fx-background-color: transparent;">
+                           <graphic>
+                              <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../img/ic_play%20(1).png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Button mnemonicParsing="false" prefHeight="20.0" prefWidth="29.0" style="-fx-background-color: transparent;">
+                           <graphic>
+                              <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../img/ic_end.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Button mnemonicParsing="false" prefHeight="20.0" prefWidth="29.0" style="-fx-background-color: transparent;">
+                           <graphic>
+                              <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="file:/C:/Users/TechCare/IdeaProjects/Spotify/src/main/resources/music/img/ic_repeat.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                     </children>
+                  </HBox>
+                  <HBox>
+                     <children>
+                        <Label text="1:30" textFill="WHITE" />
+                        <Slider prefHeight="18.0" prefWidth="514.0" HBox.hgrow="ALWAYS" />
+                        <Label prefHeight="18.0" prefWidth="22.0" text="2:28" textFill="WHITE" />
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+            <Pane prefHeight="200.0" prefWidth="0.0" HBox.hgrow="ALWAYS" />
+            <HBox alignment="CENTER" prefHeight="74.0" prefWidth="147.0" spacing="5.0">
+               <children>
+                  <Button mnemonicParsing="false" prefHeight="20.0" prefWidth="29.0" style="-fx-background-color: transparent;">
+                     <graphic>
+                        <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../img/sing.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button mnemonicParsing="false" prefHeight="20.0" prefWidth="29.0" style="-fx-background-color: transparent;">
+                     <graphic>
+                        <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../img/ic_playlist.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button mnemonicParsing="false" prefHeight="20.0" prefWidth="29.0" style="-fx-background-color: transparent;">
+                     <graphic>
+                        <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../img/ic_volume.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Slider orientation="VERTICAL" prefHeight="56.0" prefWidth="14.0" />
+               </children>
+            </HBox>
+            <Button mnemonicParsing="false" prefHeight="20.0" prefWidth="29.0" style="-fx-background-color: transparent;" />
+         </children>
+      </HBox>
+   </bottom>
+</BorderPane>
