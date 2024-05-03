@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="DTO.ArtistsEntity" table="Artists" schema="dbo" catalog="MusicApp">
+        <id name="artistId">
+            <column name="artist_id" sql-type="int"/>
+        </id>
+        <property name="name">
+            <column name="name" sql-type="nvarchar(255)"/>
+        </property>
+        <property name="imageUrl">
+            <column name="image_url" sql-type="nvarchar(255)" not-null="true"/>
+        </property>
+    </class>
+</hibernate-mapping>

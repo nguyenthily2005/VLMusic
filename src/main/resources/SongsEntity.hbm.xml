@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="DTO.SongsEntity" table="Songs" schema="dbo" catalog="MusicApp">
+        <id name="songId">
+            <column name="song_id" sql-type="int"/>
+        </id>
+        <property name="title">
+            <column name="title" sql-type="nvarchar(255)"/>
+        </property>
+        <property name="artistId">
+            <column name="artist_id" sql-type="int" not-null="true"/>
+        </property>
+        <property name="albumId">
+            <column name="album_id" sql-type="int" not-null="true"/>
+        </property>
+        <property name="releaseYear">
+            <column name="release_year" sql-type="int" not-null="true"/>
+        </property>
+        <property name="playCount">
+            <column name="play_count" sql-type="int" not-null="true"/>
+        </property>
+        <property name="songUrl">
+            <column name="song_url" sql-type="nvarchar(255)" not-null="true"/>
+        </property>
+        <property name="imgUrl">
+            <column name="img_url" sql-type="nvarchar(255)" not-null="true"/>
+        </property>
+    </class>
+</hibernate-mapping>
