@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import java.lang.String?>
+<?import java.net.URL?>
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
@@ -13,11 +15,11 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1000.0" styleClass="primary_color" stylesheets="@../music/css/style.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.Dashboard_Controller">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.Dashboard_Controller">
    <left>
       <VBox prefHeight="200.0" prefWidth="200.0" spacing="20.0" styleClass="secondary-color" stylesheets="@../music/css/style.css" BorderPane.alignment="CENTER">
          <children>
-            <Label alignment="CENTER" prefHeight="58.0" prefWidth="200.0" text="VLMusic" textFill="WHITE">
+            <Label alignment="CENTER" prefHeight="58.0" prefWidth="200.0" text="Music" textFill="WHITE">
                <font>
                   <Font name="Rage Italic" size="40.0" />
                </font>
@@ -152,10 +154,10 @@
                <children>
                   <HBox alignment="CENTER" maxHeight="-Infinity" prefHeight="35.0" prefWidth="334.0" styleClass="search-container" stylesheets="@../music/css/style.css">
                      <children>
-                        <TextField prefHeight="26.0" prefWidth="262.0" promptText="Search" style="-fx-background-color: transparent;" />
+                        <TextField prefHeight="26.0" prefWidth="275.0" promptText="Search" style="-fx-background-color: transparent;" />
                         <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
                            <image>
-                              <Image url="@../music/img/search.png" />
+                              <Image url="@../music/img/search2.png" />
                            </image>
                         </ImageView>
                      </children>
@@ -163,11 +165,15 @@
                         <Insets left="20.0" />
                      </HBox.margin>
                   </HBox>
-                  <Pane prefHeight="58.0" prefWidth="249.0" HBox.hgrow="ALWAYS" />
-                  <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="120.0" styleClass="upgrade-button" stylesheets="@../music/css/style.css" text="UPGRADE" textFill="WHITE" />
-                  <HBox alignment="CENTER" prefHeight="58.0" prefWidth="148.0" spacing="10.0">
+                  <Pane prefHeight="56.0" prefWidth="250.0" HBox.hgrow="ALWAYS" />
+                  <HBox alignment="CENTER" prefHeight="56.0" prefWidth="205.0" spacing="10.0">
                      <children>
-                        <Button fx:id="logBT" mnemonicParsing="false" onAction="#login" style="-fx-background-color: transparent;" text="Login" textFill="WHITE">
+                        <Button fx:id="logBT" mnemonicParsing="false" onAction="#login" prefHeight="34.0" prefWidth="86.0" style="-fx-background-color: transparent;" styleClass="mousemoved" text="Sign up" textFill="WHITE">
+                           <font>
+                              <Font name="Berlin Sans FB" size="18.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="logBT1" mnemonicParsing="false" onAction="#login" prefHeight="34.0" prefWidth="73.0" styleClass="search-container" text="Login" textFill="#150000">
                            <font>
                               <Font name="Berlin Sans FB" size="18.0" />
                            </font>
@@ -313,4 +319,12 @@
          </children>
       </HBox>
    </bottom>
+   <stylesheets>
+      <URL value="@../music/css/style.css" />
+      <URL value="@../music/css/styleLogin.css" />
+   </stylesheets>
+   <styleClass>
+      <String fx:value="primary_color" />
+      <String fx:value="borderkhungdash" />
+   </styleClass>
 </BorderPane>

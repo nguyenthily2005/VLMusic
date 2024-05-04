@@ -1,0 +1,28 @@
+.primary_color{
+    -fx-background-color: #181818;
+}
+.border{
+    -fx-border-color: #808080;
+    -fx-border-width: 1 1 1 1;
+    -fx-border-radius: 5;
+}
+.button-border{
+    -fx-background-color: #757575;
+    -fx-background-radius: 100;
+}
+.click:hover{
+    -fx-border-color: #fff;
+}
+.click_btn:hover{
+    -fx-background-color: #fff;
+    -fx-background-radius: 100;
+}
+.forgot:hover{
+    -fx-background-color: #fff;
+}
+
+.borderkhung{
+    -fx-border-color: #fff;
+    -fx-border-width: 3 3 3 3;
+    -fx-border-radius: 5;
+}
