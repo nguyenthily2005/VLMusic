@@ -11,7 +11,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="450.0" stylesheets="@../music/css/styleLogin.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="450.0" stylesheets="@../music/css/styleLogin.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.LoginController">
    <children>
       <Pane prefHeight="66.0" prefWidth="450.0" />
       <Label alignment="CENTER" prefHeight="100.0" prefWidth="450.0" text="Login to ..." textFill="WHITE">
@@ -28,7 +28,7 @@
             <Insets bottom="5.0" left="50.0" />
          </padding>
       </Label>
-      <TextField prefHeight="43.0" prefWidth="360.0" promptText="Email or username" style="-fx-background-color: transparent;">
+      <TextField fx:id="usernameTF" prefHeight="43.0" prefWidth="360.0" promptText="Email or username" style="-fx-background-color: transparent;">
          <VBox.margin>
             <Insets left="50.0" right="40.0" />
          </VBox.margin>
@@ -51,7 +51,7 @@
             <Insets bottom="5.0" left="50.0" top="5.0" />
          </padding>
       </Label>
-      <PasswordField prefHeight="43.0" prefWidth="360.0" promptText="Password" style="-fx-background-color: transparent;">
+      <PasswordField fx:id="passwordTF" prefHeight="43.0" prefWidth="360.0" promptText="Password" style="-fx-background-color: transparent;">
          <VBox.margin>
             <Insets left="50.0" right="40.0" />
          </VBox.margin>
@@ -63,7 +63,7 @@
             <String fx:value="click" />
          </styleClass>
       </PasswordField>
-      <CheckBox mnemonicParsing="false" prefHeight="22.0" prefWidth="118.0" stylesheets="@../music/css/styleLogin.css" text="Show password" textFill="#fcfcfc">
+      <CheckBox fx:id="checkbox" mnemonicParsing="false" prefHeight="22.0" prefWidth="118.0" stylesheets="@../music/css/styleLogin.css" text="Show password" textFill="#fcfcfc">
          <VBox.margin>
             <Insets left="52.0" />
          </VBox.margin>
@@ -71,7 +71,7 @@
             <Insets top="5.0" />
          </padding>
       </CheckBox>
-      <Button mnemonicParsing="false" prefHeight="35.0" prefWidth="360.0" stylesheets="@../music/css/styleLogin.css" text="Log in" textFill="#1e1d1d">
+      <Button fx:id="loginnBT" mnemonicParsing="false" onAction="#login" prefHeight="35.0" prefWidth="360.0" stylesheets="@../music/css/styleLogin.css" text="Log in" textFill="#1e1d1d">
          <VBox.margin>
             <Insets left="50.0" right="40.0" top="40.0" />
          </VBox.margin>
@@ -83,7 +83,7 @@
             <String fx:value="click_btn" />
          </styleClass>
       </Button>
-      <Button alignment="CENTER" mnemonicParsing="false" prefHeight="26.0" prefWidth="466.0" style="-fx-background-color: transparent;" styleClass="forgot" text="Forgot your password?" textFill="WHITE">
+      <Button fx:id="forgotBT" alignment="CENTER" mnemonicParsing="false" onAction="#forgotpassword" prefHeight="26.0" prefWidth="466.0" style="-fx-background-color: transparent;" styleClass="forgot" text="Forgot your password?" textFill="WHITE">
          <VBox.margin>
             <Insets />
          </VBox.margin>

@@ -11,6 +11,7 @@ module music.spotify {
     requires java.sql;
     requires java.persistence;
     requires java.naming;
+    requires jakarta.mail;
 
     opens DTO to org.hibernate.orm.core;
 
