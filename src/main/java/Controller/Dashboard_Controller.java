@@ -1,85 +1,1 @@
-package Controller;
-
-import javafx.event.ActionEvent;
-import javafx.fxml.FXML;
-import javafx.fxml.FXMLLoader;
-import javafx.scene.Parent;
-import javafx.scene.Scene;
-import javafx.scene.control.Button;
-import javafx.stage.Stage;
-
-import java.io.IOException;
-
-import static Controller.LoginController.LOGGED_USER;
-
-public class Dashboard_Controller {
-
-    private static Stage loginStage;
-    private static Stage logupStage;
-
-    @FXML
-    private Button logBT;
-
-    @FXML
-    private Button signupBT;
-
-    @FXML
-    void login(ActionEvent event) {
-
-        if (LOGGED_USER != null) {
-
-
-        } else  {
-            try {
-                FXMLLoader fxmlLoader = new FXMLLoader(Dashboard_Controller.class.getResource("/GUI/login.fxml"));
-                Parent root = fxmlLoader.load();
-                loginStage = new Stage();
-                loginStage.initModality(javafx.stage.Modality.APPLICATION_MODAL);
-                loginStage.setTitle("Login");
-                loginStage.setScene(new Scene(root));
-                loginStage.setResizable(false);
-                loginStage.show();
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
-        }
-    }
-
-    @FXML
-    void signup(ActionEvent event) {
-
-        if (LOGGED_USER != null) {
-
-
-        } else  {
-            try {
-                FXMLLoader fxmlLoader = new FXMLLoader(Dashboard_Controller.class.getResource("/GUI/logup.fxml"));
-                Parent root = fxmlLoader.load();
-                logupStage = new Stage();
-                logupStage.initModality(javafx.stage.Modality.APPLICATION_MODAL);
-                logupStage.setTitle("Sign Up");
-                logupStage.setScene(new Scene(root));
-                logupStage.setResizable(false);
-                logupStage.show();
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
-        }
-    }
-
-    // Method to close the login window
-    public static void closeLogin() {
-        if (loginStage != null) {
-            loginStage.close();
-        }
-    }
-
-
-    // Method to close the logup window
-    public static void closeLogup() {
-        if (logupStage != null) {
-            logupStage.close();
-        }
-    }
-
-}
+package Controller;import Bus.ArtistBus;import Bus.SongBus;import DTO.ArtistsEntity;import DTO.SongsEntity;import javafx.event.ActionEvent;import javafx.fxml.FXML;import javafx.fxml.FXMLLoader;import javafx.fxml.Initializable;import javafx.scene.Parent;import javafx.scene.Scene;import javafx.scene.control.Button;import javafx.scene.control.Label;import javafx.scene.control.ScrollPane;import javafx.scene.image.ImageView;import javafx.scene.layout.BorderPane;import javafx.scene.layout.GridPane;import javafx.scene.layout.Pane;import javafx.scene.layout.StackPane;import javafx.stage.Stage;import java.io.IOException;import java.net.URL;import java.util.List;import java.util.ResourceBundle;import static Controller.LoginController.LOGGED_USER;public class Dashboard_Controller   {    private static Stage loginStage;    private static Stage logupStage;    private Pane homePane;    private Pane favoritePane;    private Pane songsPane;    private Pane albumPane;    List<SongsEntity> songs = new SongBus().getAllSongs();    List<ArtistsEntity> artists = new ArtistBus().getAllArtists();    private GridPane musicTagsPane;    private ScrollPane scrollPane;    @FXML    private BorderPane borderPane;    @FXML    private Button logBT;    @FXML    private Button signupBT;    @FXML    void login(ActionEvent event) {        if (LOGGED_USER != null) {        } else  {            try {                FXMLLoader fxmlLoader = new FXMLLoader(Dashboard_Controller.class.getResource("/GUI/login.fxml"));                Parent root = fxmlLoader.load();                loginStage = new Stage();                loginStage.initModality(javafx.stage.Modality.APPLICATION_MODAL);                loginStage.setTitle("Login");                loginStage.setScene(new Scene(root));                loginStage.setResizable(false);                loginStage.show();            } catch (IOException e) {                e.printStackTrace();            }        }    }    @FXML    void signup(ActionEvent event) {        if (LOGGED_USER != null) {        } else  {            try {                FXMLLoader fxmlLoader = new FXMLLoader(Dashboard_Controller.class.getResource("/GUI/logup.fxml"));                Parent root = fxmlLoader.load();                logupStage = new Stage();                logupStage.initModality(javafx.stage.Modality.APPLICATION_MODAL);                logupStage.setTitle("Sign Up");                logupStage.setScene(new Scene(root));                logupStage.setResizable(false);                logupStage.show();            } catch (IOException e) {                e.printStackTrace();            }        }    }    // Method to close the login window    public static void closeLogin() {        if (loginStage != null) {            loginStage.close();        }    }    // Method to close the logup window    public static void closeLogup() {        if (logupStage != null) {            logupStage.close();        }    }    @FXML    void showHomePane(ActionEvent event) throws IOException {        borderPane.setCenter(homePane = getHomePane());    }    @FXML    void showFavoritePane(ActionEvent event) {        borderPane.setCenter(favoritePane = createFavoritePane());    }    @FXML    void showSongsPane(ActionEvent event) {        borderPane.setCenter(songsPane = createSongsPane());    }    @FXML    void showAlbumPane(ActionEvent event) throws IOException {        borderPane.setCenter(albumPane = createAlbumPane());    }    private Pane getHomePane() throws IOException {        FXMLLoader loader = new FXMLLoader(getClass().getResource("/GUI/HomePane.fxml"));        Pane root = loader.load(); // Load FXML content and create root pane        Pane pane = (Pane) loader.getNamespace().get("pane");        ScrollPane musicTagScrollPane = (ScrollPane) loader.getNamespace().get("musicTagScrollPane");        musicTagsPane = (GridPane) loader.getNamespace().get("musicTagsPane");        addMusicTags();        musicTagScrollPane.setContent(musicTagsPane);        return pane;    }    private Pane createFavoritePane() {        Pane pane = new Pane();        Button button = new Button("Favorite Pane");        button.setOnAction(event -> {            System.out.println("Favorite Pane");        });        pane.getChildren().add(button);        pane.setStyle("-fx-background-color: lightgreen;");        pane.setPrefSize(100, 300);        return pane;    }    private Pane createSongsPane() {        Pane pane = new Pane();        Button button = new Button("Songs Pane");        button.setOnAction(event -> {            System.out.println("Songs Pane");        });        pane.getChildren().add(button);        pane.setStyle("-fx-background-color: lightcoral;");        pane.setPrefSize(400, 300);        return pane;    }    private Pane createAlbumPane() throws IOException {        return new Pane();    }    private void addMusicTags() {        // Add music tags to the music tags list        int row = 0;        int col = 0;        List<SongsEntity> songs = new SongBus().getAllSongs();        List<ArtistsEntity> artists = new ArtistBus().getAllArtists();        for (SongsEntity song : songs) {            for (ArtistsEntity artist : artists) {                if (song.getArtistId() == artist.getArtistId()) {                    String s = song.getTitle() + " - " + artist.getName();                    Pane musicTag = createMusicTag(s, song.getSongUrl(), song.getImgUrl());                    musicTagsPane.add(musicTag, col, row);                    if (col == 2) {                        col = 0;                        row++;                    } else {                        col++;                    }                }            }        }    }    private Pane createMusicTag(String song, String songUrl, String imgUrl) {        StackPane musicTag = new StackPane(); // Change Pane to StackPane        musicTag.getStyleClass().add("music-tag"); // Thêm CSS class cho pane        musicTag.setStyle("-fx-border-width: 5px; -fx-border-color: white");        Label tagNameLabel = new Label(song);        tagNameLabel.getStyleClass().add("tag-name");        musicTag.getChildren().add(tagNameLabel);        // Thêm xử lý sự kiện khi nhấp vào musicTag        musicTag.setOnMouseClicked(event -> {            System.out.println("Music tag clicked: " + song);            // Thêm mã xử lý khác ở đây nếu cần        });        return musicTag;    }}

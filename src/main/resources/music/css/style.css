@@ -41,3 +41,16 @@
     -fx-border-color:#181818;
     -fx-border-width: 0 0 0 5;
 }
+
+/*Test Music Tag*/
+
+.music-tag {
+    -fx-background-color: #3498db;
+    -fx-padding: 10px;
+    -fx-border-radius: 5px;
+}
+
+.tag-name {
+    -fx-text-fill: white;
+    -fx-font-size: 16px;
+}

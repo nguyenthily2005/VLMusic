@@ -45,6 +45,7 @@ public class LoginController {
 
         if (emailoruserTFText.isEmpty() || password.isEmpty()) {
             showErrorAlert("Login Failed", "Please fill in all fields.");
+            return;
         }
 
         boolean userExists = false;
@@ -85,10 +86,28 @@ public class LoginController {
         }
     }
 
+    @FXML
+    void initialize() {
+
+        checkbox.setOnAction(event -> {
+
+            if (checkbox.isSelected()) {
+                passwordTF.setPromptText(passwordTF.getText());
+                passwordTF.setText("");
+                passwordTF.setDisable(true);
+            } else {
+                passwordTF.setText(passwordTF.getPromptText());
+                passwordTF.setPromptText("Password");
+                passwordTF.setDisable(false);
+            }
+        });
+    }
+
     public static void closeForgotPassword() {
         if (forgotpasswordStage != null) {
             forgotpasswordStage.close();
         }
     }
+
 
 }

@@ -1,14 +1,32 @@
 package DAO;
 
+import DTO.SongsEntity;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.query.Query;
 
+import java.util.List;
+
 public class SongDAO {
+
     private SessionFactory sessionFactory;
 
-    public SongDAO(SessionFactory sessionFactory) {
-        this.sessionFactory = sessionFactory;
+    public SongDAO() {
+        this.sessionFactory = Connect.getSessionFactory();
+    }
+
+
+    public List<SongsEntity> getAllSongs() {
+        try (Session session = sessionFactory.openSession()) {
+            session.beginTransaction();
+
+            Query<SongsEntity> query = session.createQuery( "from SongsEntity", SongsEntity.class);
+            List<SongsEntity> songs = query.list();
+
+            session.getTransaction().commit();
+
+            return songs;
+        }
     }
 
     public int updateSongTitle(int songId, String newTitle) {

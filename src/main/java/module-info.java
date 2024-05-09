@@ -12,6 +12,7 @@ module music.spotify {
     requires java.persistence;
     requires java.naming;
     requires jakarta.mail;
+    requires javafx.media;
 
     opens DTO to org.hibernate.orm.core;
 
