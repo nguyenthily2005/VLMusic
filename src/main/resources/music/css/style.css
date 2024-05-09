@@ -38,7 +38,7 @@
     -fx-opacity: 0;
 }
 .mousemoved:hover{
-    -fx-border-color:#181818;
+    -fx-border-color:#121212;
     -fx-border-width: 0 0 0 5;
 }
 
@@ -53,4 +53,10 @@
 .tag-name {
     -fx-text-fill: white;
     -fx-font-size: 16px;
+}
+
+
+.zoom-button:hover {
+    -fx-scale-x: 1.5;
+    -fx-scale-y: 1.5;
 }

@@ -15,7 +15,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane fx:id="borderPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.Dashboard_Controller">
+<BorderPane fx:id="borderPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.Dashboard_Controller">
    <left>
       <VBox prefHeight="200.0" prefWidth="200.0" spacing="20.0" styleClass="secondary-color" stylesheets="@../music/css/style.css" BorderPane.alignment="CENTER">
          <children>
@@ -120,7 +120,7 @@
                </padding>
             </VBox>
             <Pane prefHeight="242.0" prefWidth="200.0" VBox.vgrow="ALWAYS" />
-            <Button mnemonicParsing="false" prefHeight="29.0" prefWidth="203.0" style="-fx-background-color: transparent;" styleClass="click" text="New playlist" textFill="#d7d7d7">
+            <Button mnemonicParsing="false" prefHeight="29.0" prefWidth="203.0" style="-fx-background-color: transparent;" styleClass="click_btn" text="New playlist" textFill="#d7d7d7">
                <graphic>
                   <ImageView fitHeight="15.0" fitWidth="15.0" pickOnBounds="true" preserveRatio="true">
                      <image>
@@ -175,16 +175,16 @@
                <children>
                   <HBox alignment="CENTER" prefHeight="86.0" prefWidth="558.0" spacing="15.0">
                      <children>
-                        <Button mnemonicParsing="false" prefHeight="20.0" prefWidth="29.0" style="-fx-background-color: transparent;">
+                        <Button mnemonicParsing="false" prefHeight="20.0" prefWidth="29.0" style="-fx-background-color: transparent;" styleClass="zoom-button">
                            <graphic>
-                              <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                              <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true" styleClass="bottom-border">
                                  <image>
                                     <Image url="@../music/img/ic_shuffle.png" />
                                  </image>
                               </ImageView>
                            </graphic>
                         </Button>
-                        <Button mnemonicParsing="false" prefHeight="20.0" prefWidth="29.0" style="-fx-background-color: transparent;">
+                        <Button mnemonicParsing="false" prefHeight="20.0" prefWidth="29.0" style="-fx-background-color: transparent;" styleClass="zoom-button" stylesheets="@../music/css/style.css">
                            <graphic>
                               <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
                                  <image>
@@ -193,7 +193,7 @@
                               </ImageView>
                            </graphic>
                         </Button>
-                        <Button mnemonicParsing="false" prefHeight="20.0" prefWidth="29.0" style="-fx-background-color: transparent;">
+                        <Button mnemonicParsing="false" prefHeight="20.0" prefWidth="29.0" style="-fx-background-color: transparent;" styleClass="zoom-button">
                            <graphic>
                               <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
                                  <image>
@@ -202,7 +202,7 @@
                               </ImageView>
                            </graphic>
                         </Button>
-                        <Button mnemonicParsing="false" prefHeight="20.0" prefWidth="29.0" style="-fx-background-color: transparent;">
+                        <Button mnemonicParsing="false" prefHeight="20.0" prefWidth="29.0" style="-fx-background-color: transparent;" styleClass="zoom-button">
                            <graphic>
                               <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
                                  <image>
@@ -211,7 +211,7 @@
                               </ImageView>
                            </graphic>
                         </Button>
-                        <Button mnemonicParsing="false" prefHeight="20.0" prefWidth="29.0" style="-fx-background-color: transparent;">
+                        <Button mnemonicParsing="false" prefHeight="20.0" prefWidth="29.0" style="-fx-background-color: transparent;" styleClass="zoom-button">
                            <graphic>
                               <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
                                  <image>
@@ -234,7 +234,7 @@
             <Pane prefHeight="200.0" prefWidth="0.0" HBox.hgrow="ALWAYS" />
             <HBox alignment="CENTER" prefHeight="74.0" prefWidth="147.0" spacing="5.0">
                <children>
-                  <Button mnemonicParsing="false" prefHeight="20.0" prefWidth="29.0" style="-fx-background-color: transparent;">
+                  <Button mnemonicParsing="false" prefHeight="20.0" prefWidth="29.0" style="-fx-background-color: transparent;" styleClass="zoom-button">
                      <graphic>
                         <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
                            <image>
@@ -243,7 +243,7 @@
                         </ImageView>
                      </graphic>
                   </Button>
-                  <Button mnemonicParsing="false" prefHeight="20.0" prefWidth="29.0" style="-fx-background-color: transparent;">
+                  <Button mnemonicParsing="false" prefHeight="20.0" prefWidth="29.0" style="-fx-background-color: transparent;" styleClass="zoom-button">
                      <graphic>
                         <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
                            <image>
@@ -252,7 +252,7 @@
                         </ImageView>
                      </graphic>
                   </Button>
-                  <Button mnemonicParsing="false" prefHeight="20.0" prefWidth="29.0" style="-fx-background-color: transparent;">
+                  <Button mnemonicParsing="false" prefHeight="20.0" prefWidth="29.0" style="-fx-background-color: transparent;" styleClass="zoom-button">
                      <graphic>
                         <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
                            <image>
@@ -264,7 +264,7 @@
                   <Slider orientation="VERTICAL" prefHeight="56.0" prefWidth="14.0" />
                </children>
             </HBox>
-            <Button mnemonicParsing="false" prefHeight="20.0" prefWidth="29.0" style="-fx-background-color: transparent;" />
+            <Button mnemonicParsing="false" prefHeight="84.0" prefWidth="30.0" style="-fx-background-color: transparent;" />
          </children>
       </HBox>
    </bottom>
@@ -277,7 +277,7 @@
       <String fx:value="borderkhungdash" />
    </styleClass>
    <top>
-      <HBox prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+      <HBox alignment="TOP_CENTER" prefHeight="53.0" prefWidth="996.0" styleClass="secondary-color" stylesheets="@../music/css/style.css" BorderPane.alignment="CENTER">
          <children>
             <Label alignment="CENTER" prefHeight="58.0" prefWidth="200.0" text="Music" textFill="WHITE">
                <font>
@@ -291,11 +291,12 @@
                   </ImageView>
                </graphic>
             </Label>
-            <HBox alignment="CENTER_LEFT" prefHeight="56.0" prefWidth="740.0" spacing="20.0">
+            <Pane HBox.hgrow="ALWAYS" />
+            <HBox alignment="CENTER_LEFT" prefHeight="63.0" prefWidth="801.0" spacing="20.0">
                <children>
                   <HBox alignment="CENTER" maxHeight="-Infinity" prefHeight="35.0" prefWidth="334.0" styleClass="search-container" stylesheets="@../music/css/style.css">
                      <children>
-                        <TextField prefHeight="26.0" prefWidth="275.0" promptText="Search" style="-fx-background-color: transparent;" />
+                        <TextField prefHeight="26.0" prefWidth="256.0" promptText="Search" style="-fx-background-color: transparent;" />
                         <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
                            <image>
                               <Image url="@../music/img/search.png" />
@@ -306,20 +307,26 @@
                         <Insets left="20.0" />
                      </HBox.margin>
                   </HBox>
-                  <Pane prefHeight="56.0" prefWidth="250.0" HBox.hgrow="ALWAYS" />
-                  <HBox alignment="CENTER" prefHeight="56.0" prefWidth="205.0" spacing="10.0">
+                  <Pane accessibleRole="NODE" prefHeight="63.0" prefWidth="266.0" HBox.hgrow="ALWAYS" />
+                  <HBox alignment="CENTER_RIGHT" prefHeight="63.0" prefWidth="230.0" spacing="10.0">
                      <children>
-                        <Button fx:id="signupBT" mnemonicParsing="false" onAction="#signup" prefHeight="34.0" prefWidth="86.0" style="-fx-background-color: transparent;" styleClass="mousemoved" text="Sign up" textFill="WHITE">
+                        <Button fx:id="signupBT" mnemonicParsing="false" onAction="#signup" prefHeight="34.0" prefWidth="85.0" style="-fx-background-color: transparent;" styleClass="mousemoved" text="Sign up" textFill="WHITE">
                            <font>
                               <Font name="Berlin Sans FB" size="18.0" />
                            </font>
                         </Button>
-                        <Button fx:id="loginBT" mnemonicParsing="false" onAction="#login" prefHeight="34.0" prefWidth="73.0" styleClass="search-container" text="Login" textFill="#150000">
+                        <Button fx:id="loginBT" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#login" prefHeight="34.0" prefWidth="73.0" styleClass="search-container" text="Login" textFill="#150000">
                            <font>
                               <Font name="Berlin Sans FB" size="18.0" />
                            </font>
+                           <HBox.margin>
+                              <Insets right="5.0" />
+                           </HBox.margin>
                         </Button>
                      </children>
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
                   </HBox>
                </children>
             </HBox>

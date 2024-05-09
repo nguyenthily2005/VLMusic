@@ -39,8 +39,8 @@
             <Insets />
          </opaqueInsets>
          <styleClass>
-            <String fx:value="border" />
             <String fx:value="click" />
+            <String fx:value="border" />
          </styleClass>
       </TextField>
       <Label prefHeight="22.0" prefWidth="459.0" text="Password" textFill="WHITE">
