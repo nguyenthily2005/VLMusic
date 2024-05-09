@@ -145,29 +145,21 @@
                         <Image url="@../music/img/lee.jpg" />
                      </image>
                   </ImageView>
-                  <VBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="112.0">
+                  <VBox alignment="CENTER_LEFT" prefHeight="74.0" prefWidth="162.0">
                      <children>
-                        <Label prefHeight="27.0" prefWidth="114.0" text="Lydepgai" textFill="WHITE">
+                        <Label fx:id="songTitleLB" prefHeight="27.0" prefWidth="114.0" textFill="WHITE">
                            <font>
-                              <Font name="Berlin Sans FB" size="18.0" />
+                              <Font name="Times New Roman" size="18.0" />
                            </font>
                         </Label>
-                        <Label prefHeight="26.0" prefWidth="101.0" text="s1" textFill="WHITE">
+                        <Label fx:id="artistLB" prefHeight="26.0" prefWidth="101.0" textFill="WHITE">
                            <font>
                               <Font size="16.0" />
                            </font>
                         </Label>
                      </children>
                   </VBox>
-                  <Button mnemonicParsing="false" style="-fx-background-color: transparent;">
-                     <graphic>
-                        <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
-                           <image>
-                              <Image url="@../music/img/ic_love.png" />
-                           </image>
-                        </ImageView>
-                     </graphic>
-                  </Button>
+                  <Button mnemonicParsing="false" style="-fx-background-color: transparent;" />
                </children>
             </HBox>
             <Pane prefHeight="74.0" prefWidth="0.0" HBox.hgrow="ALWAYS" />
@@ -193,9 +185,9 @@
                               </ImageView>
                            </graphic>
                         </Button>
-                        <Button mnemonicParsing="false" prefHeight="20.0" prefWidth="29.0" style="-fx-background-color: transparent;" styleClass="zoom-button">
+                        <Button fx:id="playBT" mnemonicParsing="false" onAction="#pause" prefHeight="20.0" prefWidth="29.0" style="-fx-background-color: transparent;" styleClass="zoom-button">
                            <graphic>
-                              <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                              <ImageView fx:id="playandpauseIV" fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
                                  <image>
                                     <Image url="@../music/img/ic_play (1).png" />
                                  </image>
@@ -224,9 +216,9 @@
                   </HBox>
                   <HBox>
                      <children>
-                        <Label prefHeight="17.0" prefWidth="27.0" text="1:30" textFill="WHITE" />
-                        <Slider prefHeight="18.0" prefWidth="514.0" HBox.hgrow="ALWAYS" />
-                        <Label prefHeight="17.0" prefWidth="29.0" text="2:28" textFill="WHITE" />
+                        <Label fx:id="startDur" prefHeight="17.0" prefWidth="50.0" text="00:00" textFill="WHITE" />
+                        <Slider fx:id="durationSlider" prefHeight="17.0" prefWidth="516.0" HBox.hgrow="ALWAYS" />
+                        <Label fx:id="finishDur" prefHeight="17.0" prefWidth="49.0" text="00:00" textFill="WHITE" />
                      </children>
                   </HBox>
                </children>
@@ -261,7 +253,7 @@
                         </ImageView>
                      </graphic>
                   </Button>
-                  <Slider orientation="VERTICAL" prefHeight="56.0" prefWidth="14.0" />
+                  <Slider fx:id="soundSlider" orientation="VERTICAL" prefHeight="56.0" prefWidth="14.0" value="50.0" />
                </children>
             </HBox>
             <Button mnemonicParsing="false" prefHeight="84.0" prefWidth="30.0" style="-fx-background-color: transparent;" />
