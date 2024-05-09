@@ -14,7 +14,6 @@ public class App extends Application {
         Scene scene = new Scene(fxmlLoader.load(), 1200, 800);
         stage.setTitle("Music Player");
         stage.setScene(scene);
-        stage.setResizable(false);
         stage.show();
     }
 

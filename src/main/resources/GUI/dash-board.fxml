@@ -21,7 +21,7 @@
          <children>
             <VBox prefHeight="31.0" prefWidth="200.0">
                <children>
-                  <Button fx:id="homeBT" alignment="TOP_LEFT" mnemonicParsing="false" onAction="#showHomePane" prefHeight="40.0" prefWidth="203.0" style="-fx-background-color: transparent;" styleClass="mouse-moved" stylesheets="@../music/css/style.css" text="Home" textFill="#d7d7d7">
+                  <Button fx:id="homeBT" alignment="TOP_LEFT" mnemonicParsing="false" onAction="#showHomePane" prefHeight="40.0" prefWidth="203.0" style="-fx-background-color: transparent;" styleClass="mouse-moved" stylesheets="@../music/css/style.css" text="Trending music" textFill="#d7d7d7">
                      <graphic>
                         <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
                            <image>
@@ -30,7 +30,7 @@
                         </ImageView>
                      </graphic>
                      <font>
-                        <Font name="Berlin Sans FB" size="25.0" />
+                        <Font name="Berlin Sans FB" size="20.0" />
                      </font>
                   </Button>
                </children>
@@ -279,19 +279,12 @@
    <top>
       <HBox alignment="TOP_CENTER" prefHeight="53.0" prefWidth="996.0" styleClass="secondary-color" stylesheets="@../music/css/style.css" BorderPane.alignment="CENTER">
          <children>
-            <Label alignment="CENTER" prefHeight="58.0" prefWidth="200.0" text="Music" textFill="WHITE">
+            <Label alignment="CENTER" prefHeight="58.0" prefWidth="200.0" text="VibeLab" textFill="WHITE">
                <font>
-                  <Font name="Rage Italic" size="40.0" />
+                  <Font name="Tempus Sans ITC" size="41.0" />
                </font>
-               <graphic>
-                  <ImageView fitHeight="55.0" fitWidth="64.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@../music/img/sound-wave.png" />
-                     </image>
-                  </ImageView>
-               </graphic>
             </Label>
-            <Pane HBox.hgrow="ALWAYS" />
+            <Pane prefWidth="16.0" HBox.hgrow="ALWAYS" />
             <HBox alignment="CENTER_LEFT" prefHeight="63.0" prefWidth="801.0" spacing="20.0">
                <children>
                   <HBox alignment="CENTER" maxHeight="-Infinity" prefHeight="35.0" prefWidth="334.0" styleClass="search-container" stylesheets="@../music/css/style.css">
