@@ -58,7 +58,8 @@
 }
 .tag-name {
     -fx-text-fill: white;
-    -fx-font-size: 16px;
+    -fx-font-size: 14px;
+    -fx-font-family: 'Times New Roman';
 }
 
 
