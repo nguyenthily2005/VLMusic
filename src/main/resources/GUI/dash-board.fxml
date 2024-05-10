@@ -138,32 +138,34 @@
    <bottom>
       <HBox prefHeight="74.0" prefWidth="1000.0" styleClass="secondary-color" stylesheets="@../music/css/style.css" BorderPane.alignment="CENTER">
          <children>
-            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="254.0" spacing="20.0">
+            <HBox alignment="CENTER" prefHeight="74.0" prefWidth="277.0" spacing="10.0">
                <children>
                   <ImageView fx:id="songIV" fitHeight="60.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@../music/img/lee.jpg" />
                      </image>
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
                   </ImageView>
-                  <VBox alignment="CENTER_LEFT" prefHeight="74.0" prefWidth="162.0">
+                  <VBox alignment="CENTER_LEFT" prefHeight="74.0" prefWidth="179.0">
                      <children>
-                        <Label fx:id="songTitleLB" prefHeight="27.0" prefWidth="114.0" textFill="WHITE">
+                        <Label fx:id="songTitleLB" prefHeight="31.0" prefWidth="182.0" textFill="WHITE">
                            <font>
                               <Font name="Times New Roman" size="18.0" />
                            </font>
                         </Label>
-                        <Label fx:id="artistLB" prefHeight="26.0" prefWidth="101.0" textFill="WHITE">
+                        <Label fx:id="artistLB" prefHeight="26.0" prefWidth="110.0" textFill="WHITE">
                            <font>
                               <Font size="16.0" />
                            </font>
                         </Label>
                      </children>
                   </VBox>
-                  <Button mnemonicParsing="false" style="-fx-background-color: transparent;" />
                </children>
             </HBox>
             <Pane prefHeight="74.0" prefWidth="0.0" HBox.hgrow="ALWAYS" />
-            <VBox alignment="CENTER" prefHeight="100.0" prefWidth="558.0">
+            <VBox alignment="CENTER" prefHeight="74.0" prefWidth="590.0">
                <children>
                   <HBox alignment="CENTER" prefHeight="86.0" prefWidth="558.0" spacing="15.0">
                      <children>
@@ -214,27 +216,21 @@
                         </Button>
                      </children>
                   </HBox>
-                  <HBox>
+                  <HBox prefHeight="28.0" prefWidth="558.0">
                      <children>
-                        <Label fx:id="startDur" prefHeight="17.0" prefWidth="50.0" text="00:00" textFill="WHITE" />
-                        <Slider fx:id="durationSlider" prefHeight="17.0" prefWidth="516.0" HBox.hgrow="ALWAYS" />
-                        <Label fx:id="finishDur" prefHeight="17.0" prefWidth="49.0" text="00:00" textFill="WHITE" />
+                        <Label fx:id="startDur" prefHeight="28.0" prefWidth="31.0" text="00:00" textFill="WHITE" />
+                        <Slider fx:id="durationSlider" prefHeight="18.0" prefWidth="499.0" value="30.0" HBox.hgrow="ALWAYS" />
+                        <Label fx:id="finishDur" prefHeight="18.0" prefWidth="40.0" text="00:00" textFill="WHITE" />
                      </children>
+                     <VBox.margin>
+                        <Insets bottom="6.0" />
+                     </VBox.margin>
                   </HBox>
                </children>
             </VBox>
             <Pane prefHeight="200.0" prefWidth="0.0" HBox.hgrow="ALWAYS" />
-            <HBox alignment="CENTER" prefHeight="74.0" prefWidth="147.0" spacing="5.0">
+            <HBox alignment="CENTER" prefHeight="74.0" prefWidth="162.0" spacing="2.0">
                <children>
-                  <Button mnemonicParsing="false" prefHeight="20.0" prefWidth="29.0" style="-fx-background-color: transparent;" styleClass="zoom-button">
-                     <graphic>
-                        <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
-                           <image>
-                              <Image url="@../music/img/sing.png" />
-                           </image>
-                        </ImageView>
-                     </graphic>
-                  </Button>
                   <Button mnemonicParsing="false" prefHeight="20.0" prefWidth="29.0" style="-fx-background-color: transparent;" styleClass="zoom-button">
                      <graphic>
                         <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
@@ -253,10 +249,10 @@
                         </ImageView>
                      </graphic>
                   </Button>
-                  <Slider fx:id="soundSlider" orientation="VERTICAL" prefHeight="56.0" prefWidth="14.0" value="50.0" />
+                  <Slider fx:id="soundSlider" prefHeight="14.0" prefWidth="70.0" value="20.0" />
                </children>
             </HBox>
-            <Button mnemonicParsing="false" prefHeight="84.0" prefWidth="30.0" style="-fx-background-color: transparent;" />
+            <Button mnemonicParsing="false" prefHeight="74.0" prefWidth="7.0" style="-fx-background-color: transparent;" />
          </children>
       </HBox>
    </bottom>

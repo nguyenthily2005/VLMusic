@@ -11,6 +11,10 @@ public class testBus {
         for (SongsEntity song : songs) {
             System.out.println(song.getImgUrl());
         }
+        List<ArtistsEntity> artists = new ArtistBus().getAllArtists();
+        for (ArtistsEntity artist : artists) {
+            System.out.println(artist.getName());
+        }
 
     }
 }
