@@ -27,3 +27,6 @@
     -fx-border-width: 3 3 3 3;
     -fx-border-radius: 5;
 }
+.transform{
+    -fx-transform: rotate(45deg);
+}

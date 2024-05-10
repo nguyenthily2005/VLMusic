@@ -13,8 +13,14 @@
     -fx-border-width: 1 0 0 0;
 }
 .search-container{
-    -fx-background-color: #fff;
-    -fx-background-radius: 100;
+    -fx-border-color: #808080;
+    -fx-border-width: 1 1 1 1;
+    -fx-border-radius: 100;
+    -fx-text-fill: #fff;
+}
+.text-search:hover{
+    /*-fx-border-color: #fff;*/
+    -fx-text-fill: #fff
 }
 .upgrade-button{
     -fx-background-color: rgba(0,0,0,0);
