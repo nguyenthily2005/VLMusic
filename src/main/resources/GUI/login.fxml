@@ -100,7 +100,7 @@
             <String fx:value="click_btn" />
          </styleClass>
       </Button>
-      <Button fx:id="forgotBT" alignment="CENTER" mnemonicParsing="false" onAction="#forgotpassword" prefHeight="26.0" prefWidth="466.0" style="-fx-background-color: transparent;" styleClass="forgot" text="Forgot your password?" textFill="WHITE">
+      <Button fx:id="forgotBT" alignment="CENTER" mnemonicParsing="false" onAction="#forgotpassword" prefHeight="26.0" prefWidth="466.0" style="-fx-background-color: transparent;" styleClass="forgot" text="Forgot your password?" textFill="WHITE" underline="true">
          <VBox.margin>
             <Insets />
          </VBox.margin>

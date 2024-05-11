@@ -100,7 +100,7 @@
             <Insets left="50.0" right="50.0" top="40.0" />
          </VBox.margin>
       </Button>
-      <Button fx:id="loginBT" alignment="CENTER" mnemonicParsing="false" onAction="#changeToLogin" prefHeight="30.0" prefWidth="450.0" style="-fx-background-color: transparent;" text="Click here" textFill="WHITE">
+      <Button fx:id="loginBT" alignment="CENTER" mnemonicParsing="false" onAction="#changeToLogin" prefHeight="30.0" prefWidth="450.0" style="-fx-background-color: transparent;" text="Click here" textFill="WHITE" underline="true">
          <graphic>
             <Label style="-fx-background-color: transparent;" text="Already have an account?" textFill="WHITE">
                <font>

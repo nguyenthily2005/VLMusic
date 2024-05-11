@@ -45,4 +45,32 @@ public class SongDAO {
             return result;
         }
     }
+
+    public void updatePlayCount(String title) {
+        try (Session session = sessionFactory.openSession()) {
+            session.beginTransaction();
+
+            String hql = "update SongsEntity set playCount = playCount + 1 where title = :title";
+            Query query = session.createQuery(hql);
+            query.setParameter("title", title);
+
+            query.executeUpdate();
+
+            session.getTransaction().commit();
+        }
+    }
+
+    public List<SongsEntity> getTrendingSongs() {
+        try (Session session = sessionFactory.openSession()) {
+            session.beginTransaction();
+
+            Query<SongsEntity> query = session.createQuery("from SongsEntity order by playCount desc", SongsEntity.class);
+            query.setMaxResults(21);
+            List<SongsEntity> songs = query.list();
+
+            session.getTransaction().commit();
+
+            return songs;
+        }
+    }
 }

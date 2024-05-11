@@ -93,5 +93,10 @@ public class Utilz {
 
     }
 
+    public static void cacheData() {
+        //logic
+
+    }
+
 
 }

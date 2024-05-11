@@ -9,4 +9,12 @@ public class SongBus {
     public List<SongsEntity> getAllSongs() {
         return new SongDAO().getAllSongs();
     }
+
+    public void updatePlayCount(String title) {
+        new SongDAO().updatePlayCount(title);
+    }
+
+    public List<SongsEntity> getTrendingSongs() {
+        return new SongDAO().getTrendingSongs();
+    }
 }

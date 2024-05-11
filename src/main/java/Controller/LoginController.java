@@ -2,6 +2,7 @@ package Controller;
 
 import Bus.UserBus;
 import DTO.UsersEntity;
+import GUI.App;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -16,7 +17,7 @@ import javafx.stage.Stage;
 import java.io.IOException;
 import java.util.List;
 
-import static Controller.Dashboard_Controller.closeLogin;
+import static Controller.Dashboard_Controller.*;
 import static Utilz.Utilz.*;
 
 public class LoginController {
@@ -61,6 +62,14 @@ public class LoginController {
         }
         if (userExists) {
             showAlert("Login Successful", "Welcome to the dashboard.");
+            try {
+                FXMLLoader fxmlLoader = new FXMLLoader(App.class.getResource("dash-board.fxml"));
+                Parent root = fxmlLoader.load();
+                App.stage.setScene(new Scene(root));
+                App.stage.show();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
             closeLogin();
         } else {
             showErrorAlert("Login Failed", "Invalid username/email or password.");
