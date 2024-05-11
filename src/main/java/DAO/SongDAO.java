@@ -65,7 +65,7 @@ public class SongDAO {
             session.beginTransaction();
 
             Query<SongsEntity> query = session.createQuery("from SongsEntity order by playCount desc", SongsEntity.class);
-            query.setMaxResults(25);
+            query.setMaxResults(35);
             List<SongsEntity> songs = query.list();
 
             session.getTransaction().commit();

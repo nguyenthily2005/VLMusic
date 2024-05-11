@@ -54,7 +54,7 @@
                         <Font name="Berlin Sans FB" size="18.0" />
                      </font>
                   </Button>
-                  <Button alignment="TOP_LEFT" mnemonicParsing="false" prefHeight="34.0" prefWidth="202.0" style="-fx-background-color: transparent;" styleClass="mouse-moved" stylesheets="@../music/css/style.css" text="Playlist" textFill="#d7d7d7">
+                  <Button fx:id="playlistBT" alignment="TOP_LEFT" mnemonicParsing="false" prefHeight="34.0" prefWidth="202.0" style="-fx-background-color: transparent;" styleClass="mouse-moved" stylesheets="@../music/css/style.css" text="Playlist" textFill="#d7d7d7">
                      <graphic>
                         <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
                            <image>
@@ -78,7 +78,7 @@
                         <Font name="Berlin Sans FB" size="25.0" />
                      </font>
                   </Label>
-                  <Button alignment="TOP_LEFT" mnemonicParsing="false" onAction="#showSongsPane" prefHeight="63.0" prefWidth="200.0" style="-fx-background-color: transparent;" styleClass="mouse-moved" stylesheets="@../music/css/style.css" text="Songs" textFill="#d7d7d7">
+                  <Button fx:id="songBT" alignment="TOP_LEFT" mnemonicParsing="false" onAction="#showSongsPane" prefHeight="63.0" prefWidth="200.0" style="-fx-background-color: transparent;" styleClass="mouse-moved" stylesheets="@../music/css/style.css" text="Songs" textFill="#d7d7d7">
                      <graphic>
                         <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
                            <image>
@@ -90,7 +90,7 @@
                         <Font name="Berlin Sans FB" size="18.0" />
                      </font>
                   </Button>
-                  <Button alignment="TOP_LEFT" mnemonicParsing="false" onAction="#showAlbumPane" prefHeight="34.0" prefWidth="202.0" style="-fx-background-color: transparent;" styleClass="mouse-moved" stylesheets="@../music/css/style.css" text="Albums" textFill="#d7d7d7">
+                  <Button fx:id="albumBT" alignment="TOP_LEFT" mnemonicParsing="false" onAction="#showAlbumPane" prefHeight="34.0" prefWidth="202.0" style="-fx-background-color: transparent;" styleClass="mouse-moved" stylesheets="@../music/css/style.css" text="Albums" textFill="#d7d7d7">
                      <graphic>
                         <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
                            <image>
@@ -102,7 +102,7 @@
                         <Font name="Berlin Sans FB" size="18.0" />
                      </font>
                   </Button>
-                  <Button alignment="TOP_LEFT" mnemonicParsing="false" prefHeight="34.0" prefWidth="202.0" style="-fx-background-color: transparent;" styleClass="mouse-moved" stylesheets="@../music/css/style.css" text="Artists" textFill="#d7d7d7">
+                  <Button fx:id="artistBT" alignment="TOP_LEFT" mnemonicParsing="false" prefHeight="34.0" prefWidth="202.0" style="-fx-background-color: transparent;" styleClass="mouse-moved" stylesheets="@../music/css/style.css" text="Artists" textFill="#d7d7d7">
                      <graphic>
                         <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
                            <image>

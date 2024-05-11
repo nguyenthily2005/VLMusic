@@ -70,9 +70,22 @@
 
 
 .zoom-button:hover {
-    -fx-scale-x: 1.5;
-    -fx-scale-y: 1.5;
+    -fx-scale-x: 1.2;
+    -fx-scale-y: 1.2;
 }
 .font{
     -fx-font-family:"Roboto Light";
+}
+.album-label{
+    -fx-font-size: 16px;
+    -fx-text-fill: #fff;
+    -fx-font-family: 'Times New Roman';
+    -fx-border-radius: 50;
+    -fx-border-color: #fff;
+    -fx-font-weight: bold;
+    -fx-padding: 5px;
+}
+.nothover{
+    -fx-background-color: transparent;
+
 }
