@@ -13,6 +13,7 @@ public class Connect {
             Configuration configuration = new Configuration().configure();
             configuration.addAnnotatedClass(SongsEntity.class);
             configuration.addAnnotatedClass(UsersEntity.class);
+            configuration.addAnnotatedClass(FavouriteDAO.class);
 
             sessionFactory = configuration.buildSessionFactory();
         } catch (Exception e) {

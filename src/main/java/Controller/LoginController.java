@@ -66,6 +66,8 @@ public class LoginController {
                 FXMLLoader fxmlLoader = new FXMLLoader(App.class.getResource("dash-board.fxml"));
                 Parent root = fxmlLoader.load();
                 App.stage.setScene(new Scene(root));
+                App.stage.setWidth(1200);
+                App.stage.setHeight(800);
                 App.stage.show();
             } catch (IOException e) {
                 e.printStackTrace();

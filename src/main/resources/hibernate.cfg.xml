@@ -17,12 +17,11 @@
     <mapping resource="AlbumsEntity.hbm.xml"/>
     <mapping resource="ArtistsEntity.hbm.xml"/>
     <mapping resource="PlaylistSongsEntity.hbm.xml"/>
-
-
     <mapping resource="PlaylistsEntity.hbm.xml"/>
     <mapping resource="SongsEntity.hbm.xml"/>
     <mapping resource="UserRecentSongsEntity.hbm.xml"/>
     <mapping resource="UsersEntity.hbm.xml"/>
+    <mapping resource="FavoriteSong.xml"/>
     <!-- <property name="connection.username"/> -->
     <!-- <property name="connection.password"/> -->
 
