@@ -13,4 +13,7 @@ public class FavoriteSongBus {
         return new DAO.FavouriteDAO().getFavourites(userId);
     }
 
+    public void removeFavoriteSong(int userId, int songId) {
+        new DAO.FavouriteDAO().removeFavourite(userId, songId);
+    }
 }

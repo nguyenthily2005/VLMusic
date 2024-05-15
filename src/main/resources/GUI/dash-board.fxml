@@ -54,7 +54,7 @@
                         <Font name="Berlin Sans FB" size="18.0" />
                      </font>
                   </Button>
-                  <Button fx:id="playlistBT" alignment="TOP_LEFT" mnemonicParsing="false" prefHeight="34.0" prefWidth="202.0" style="-fx-background-color: transparent;" styleClass="mouse-moved" stylesheets="@../music/css/style.css" text="Playlist" textFill="#d7d7d7">
+                  <Button fx:id="playlistBT" alignment="TOP_LEFT" mnemonicParsing="false" onAction="#showPlaylistPane" prefHeight="34.0" prefWidth="202.0" style="-fx-background-color: transparent;" styleClass="mouse-moved" stylesheets="@../music/css/style.css" text="Playlist" textFill="#d7d7d7">
                      <graphic>
                         <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
                            <image>

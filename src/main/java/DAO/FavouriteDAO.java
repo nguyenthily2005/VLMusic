@@ -34,7 +34,19 @@ public class FavouriteDAO {
 
 
     public void removeFavourite(int userId, int songId) {
-        // Remove a song from the user's favourites
+        try (Session session = sessionFactory.openSession()) {
+            session.beginTransaction();
+
+            String hql = "DELETE FROM FavoriteSong WHERE userId = :userId AND songId = :songId";
+            Query query = session.createQuery(hql);
+            query.setParameter("userId", userId);
+            query.setParameter("songId", songId);
+
+            query.executeUpdate();
+
+            session.getTransaction().commit();
+
+        }
     }
 
     public List<FavoriteSong> getFavourites(int userId) {
