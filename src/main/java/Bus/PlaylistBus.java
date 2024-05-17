@@ -7,10 +7,6 @@ import java.util.List;
 
 public class PlaylistBus {
 
-    public void addPlaylist(int userId, String title) {
-        new DAO.PlaylistDAO().createPlaylist(userId, title);
-    }
-
     public void removePlaylist(int playlistId) {
         new DAO.PlaylistDAO().removePlaylist(playlistId);
     }
@@ -28,4 +24,11 @@ public class PlaylistBus {
     }
 
 
+    public void removeSongFromPlaylist(int playlistId, int songId) {
+        new DAO.PlaylistDAO().removeSongFromPlaylist(playlistId, songId);
+    }
+
+    public void createPlaylist(int userId, String playlistName) {
+        new DAO.PlaylistDAO().createPlaylist(userId, playlistName);
+    }
 }

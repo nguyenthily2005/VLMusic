@@ -16,28 +16,39 @@ public class PlaylistDAO {
         this.sessionFactory = Connect.getSessionFactory();
     }
 
-    public void createPlaylist(int userId, String playlistName) {
+    public void createPlaylist(int userId, String title) {
         try (Session session = sessionFactory.openSession()) {
             session.beginTransaction();
 
-            String hql = "INSERT INTO PlaylistsEntity (userId, title) VALUES (:userId, :playlistName)";
-            Query query = session.createQuery(hql);
-            query.executeUpdate();
+            PlaylistsEntity newPlaylist = new PlaylistsEntity();
+            newPlaylist.setUserId(userId);
+            newPlaylist.setTitle(title);
+
+            session.save(newPlaylist);
 
             session.getTransaction().commit();
         }
     }
-
     public void addSongToPlaylist(int playlistId, int songId) {
         try (Session session = sessionFactory.openSession()) {
             session.beginTransaction();
 
-            String hql = "INSERT INTO PlaylistSongsEntity (playlistId, songId) VALUES (:playlistId, :songId)";
-            Query query = session.createQuery(hql);
-            query.setParameter("playlistId", playlistId);
-            query.setParameter("songId", songId);
+            // Check if the song is already in the playlist
+            String hqlCheck = "FROM PlaylistSongsEntity WHERE playlistId = :playlistId AND songId = :songId";
+            Query queryCheck = session.createQuery(hqlCheck);
+            queryCheck.setParameter("playlistId", playlistId);
+            queryCheck.setParameter("songId", songId);
+            List results = queryCheck.list();
 
-            query.executeUpdate();
+            // If the song is not in the playlist, add it
+            if (results.isEmpty()) {
+                String hql = "INSERT INTO PlaylistSongsEntity (playlistId, songId) VALUES (:playlistId, :songId)";
+                Query query = session.createQuery(hql);
+                query.setParameter("playlistId", playlistId);
+                query.setParameter("songId", songId);
+
+                query.executeUpdate();
+            }
 
             session.getTransaction().commit();
         }
@@ -82,6 +93,21 @@ public class PlaylistDAO {
             session.getTransaction().commit();
 
             return playlists;
+        }
+    }
+
+    public void removeSongFromPlaylist(int playlistId, int songId) {
+        try (Session session = sessionFactory.openSession()) {
+            session.beginTransaction();
+
+            String hql = "DELETE FROM PlaylistSongsEntity WHERE playlistId = :playlistId AND songId = :songId";
+            Query query = session.createQuery(hql);
+            query.setParameter("playlistId", playlistId);
+            query.setParameter("songId", songId);
+
+            query.executeUpdate();
+
+            session.getTransaction().commit();
         }
     }
 }

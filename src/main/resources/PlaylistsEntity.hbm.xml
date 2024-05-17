@@ -7,6 +7,7 @@
     <class name="DTO.PlaylistsEntity" table="Playlists" schema="dbo" catalog="MusicApp">
         <id name="playlistId">
             <column name="playlist_id" sql-type="int"/>
+            <generator class="native"/>
         </id>
         <property name="userId">
             <column name="user_id" sql-type="int" not-null="true"/>
