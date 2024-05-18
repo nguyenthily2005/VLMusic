@@ -12,6 +12,7 @@ import javafx.scene.control.Button;
 import javafx.scene.control.CheckBox;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
+import javafx.scene.image.Image;
 import javafx.stage.Stage;
 
 import java.io.IOException;
@@ -89,6 +90,7 @@ public class LoginController {
             forgotpasswordStage.initModality(javafx.stage.Modality.APPLICATION_MODAL);
             forgotpasswordStage.setTitle("Forgot Password");
             forgotpasswordStage.setScene(new Scene(root));
+            forgotpasswordStage.getIcons().add(new Image(getClass().getResource("/music/img/logoVL.png").toString()));
             forgotpasswordStage.show();
 
             closeLogin();

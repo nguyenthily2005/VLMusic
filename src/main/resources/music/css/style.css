@@ -114,6 +114,7 @@
     -fx-border-radius: 5;
     -fx-text-fill: #fff;
 }
+
 .addplaylist:hover{
     -fx-border-color: #fff;
 }

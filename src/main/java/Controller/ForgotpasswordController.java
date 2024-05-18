@@ -10,6 +10,7 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
+import javafx.scene.image.Image;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
 
@@ -65,6 +66,7 @@ public class ForgotpasswordController {
                     checkOTPStage.setTitle("Check OTP");
                     checkOTPStage.setScene(new Scene(root));
                     checkOTPStage.setResizable(false);
+                    checkOTPStage.getIcons().add(new Image(getClass().getResource("/music/img/logoVL.png").toString()));
                     checkOTPStage.show();
 
                     LoginController.closeForgotPassword();
