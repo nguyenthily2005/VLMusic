@@ -108,3 +108,12 @@
 .art-tag{
     -fx-background-color: lightgray;
 }
+.addplaylist{
+    -fx-border-color: #808080;
+    -fx-border-width: 1 1 1 1;
+    -fx-border-radius: 5;
+    -fx-text-fill: #fff;
+}
+.addplaylist:hover{
+    -fx-border-color: #fff;
+}
