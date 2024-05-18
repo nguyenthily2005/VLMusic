@@ -99,3 +99,12 @@
 .menu-item:hover {
     -fx-background-color: #ddd;
 }
+.image{
+    -fx-border-color: gray;
+    -fx-border-width: 2px;
+    -fx-border-style: solid;
+    -fx-padding: 5px;
+}
+.art-tag{
+    -fx-background-color: lightgray;
+}
