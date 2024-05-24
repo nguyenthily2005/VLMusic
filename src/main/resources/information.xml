@@ -1,0 +1,390 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Artists>
+
+    <Artist>
+        <StageName>Vũ</StageName>
+        <RealName>Hoàng Thái Vũ</RealName>
+        <BirthDate>1995-10-03</BirthDate>
+        <Hometown>Mai Dịch, Hà Nội</Hometown>
+        <HitSongs>
+            <Song>Lạ Lùng</Song>
+            <Song>Bước Qua Nhau</Song>
+            <Song>Đông Kiếm Em</Song>
+            <Song>Bước Qua Nhau</Song>
+        </HitSongs>
+    </Artist>
+
+    <Artist>
+        <StageName>Kai Đinh</StageName>
+        <RealName>Đinh Lê Hoàng Vỹ</RealName>
+        <BirthDate>1992-10-17</BirthDate>
+        <Hometown>Việt Name</Hometown>
+        <HitSongs>
+            <Song>Để Tôi Ôm Em Bằng Giai Điệu Này</Song>
+            <Song>Thế Hệ Tan Vỡ</Song>
+            <Song>tinhdau tinhdau tinhdau</Song>
+        </HitSongs>
+    </Artist>
+
+    <Artist>
+        <StageName>Vũ Cát Tường</StageName>
+        <RealName>Vũ Cát Tường</RealName>
+        <BirthDate>1992-10-02</BirthDate>
+        <Hometown>Long Xuyên, An Giang, Việt Nam</Hometown>
+        <HitSongs>
+            <Song>Vết Mưa</Song>
+            <Song>Mơ</Song>
+            <Song>Từng Là</Song>
+        </HitSongs>
+    </Artist>
+
+    <Artist>
+        <StageName>Sơn Tùng MTP</StageName>
+        <RealName>Nguyễn Thanh Tùng</RealName>
+        <BirthDate>1994-07-05</BirthDate>
+        <Hometown>Thái Bình, Việt Nam</Hometown>
+        <HitSongs>
+            <Song>Âm Thầm Bên Em</Song>
+            <Song>Em Của Ngày Hôm Qua</Song>
+            <Song>Chúng Ta Của Hiện Tại</Song>
+        </HitSongs>
+    </Artist>
+
+    <Artist>
+        <StageName>MCK</StageName>
+        <RealName>Nghiêm Vũ Hoàng Long</RealName>
+        <BirthDate>1999-03-02</BirthDate>
+        <Hometown>Hà Nội, Việt Nam</Hometown>
+        <HitSongs>
+            <Song>Chìm Sâu</Song>
+            <Song>Tại Vì Sao</Song>
+            <Song>Anh Đã Ổn Hơn</Song>
+        </HitSongs>
+    </Artist>
+
+    <Artist>
+        <StageName>Chillies</StageName>
+        <RealName>Music Band</RealName>
+        <BirthDate>2018</BirthDate>
+        <Hometown>Việt Nam</Hometown>
+        <HitSongs>
+            <Song>Và Thế Là Hết</Song>
+            <Song>Có Em Bên Đời Bổng Vui</Song>
+            <Song>Đại Lộ Mặt Trời</Song>
+        </HitSongs>
+    </Artist>
+
+    <Artist>
+        <StageName>Hoàng Dũng</StageName>
+        <RealName>Nguyễn Hoàng Dũng</RealName>
+        <BirthDate>1995-11-04</BirthDate>
+        <Hometown>Thái Nguyên, Việt Nam</Hometown>
+        <HitSongs>
+            <Song>Nàng Thơ</Song>
+            <Song>Yếu Đuối</Song>
+            <Song>Đôi Mươi</Song>
+        </HitSongs>
+    </Artist>
+
+    <Artist>
+        <StageName>Thịnh Suy</StageName>
+        <RealName>Đỗ Quốc Thịnh</RealName>
+        <BirthDate>1999-10-18</BirthDate>
+        <Hometown>Việt Nam</Hometown>
+        <HitSongs>
+            <Song>Tiny Love</Song>
+            <Song>Chuyện Rằng</Song>
+            <Song>Mai Mình Xa</Song>
+        </HitSongs>
+    </Artist>
+
+    <Artist>
+        <StageName>Thái Đinh</StageName>
+        <RealName>Đinh Hồng Thái</RealName>
+        <BirthDate>1995-02-09</BirthDate>
+        <Hometown>Quảng Ninh, Việt Nam</Hometown>
+        <HitSongs>
+            <Song>Phố Không Em</Song>
+            <Song>Đi Qua Mùa Hạ</Song>
+            <Song>Em Có Còn Dùng Số Này Không</Song>
+        </HitSongs>
+    </Artist>
+
+    <Artist>
+        <StageName>Kiên Trịnh</StageName>
+        <RealName>Trịnh Trung Kiên</RealName>
+        <BirthDate>1995-12-11</BirthDate>
+        <Hometown>Hà Nội, Việt Nam</Hometown>
+        <HitSongs>
+            <Song>Bên Trái</Song>
+            <Song>Nghe Nhạc Anh Mỗi Khi Buồn</Song>
+            <Song>Mì Tôm Hai Trứng</Song>
+        </HitSongs>
+    </Artist>
+
+    <Artist>
+        <StageName>Jaykii</StageName>
+        <RealName>Trần Anh Quân</RealName>
+        <BirthDate>1993-09-21</BirthDate>
+        <Hometown>Việt Nam</Hometown>
+        <HitSongs>
+            <Song>Chiều Hôm Ấy</Song>
+            <Song>Yếu Đuối Để Ai Xem</Song>
+            <Song>Sao Em Nỡ</Song>
+        </HitSongs>
+    </Artist>
+
+    <Artist>
+        <StageName>HIEUTHUHAI</StageName>
+        <RealName>Trần Minh Hiếu</RealName>
+        <BirthDate>1999-09-28</BirthDate>
+        <Hometown>Hồ Chí Minh, Việt Nam</Hometown>
+        <HitSongs>
+            <Song>Không Thể Say</Song>
+            <Song>Ngủ Một Mình</Song>
+            <Song>Nghe Như TÌnh Yêu</Song>
+        </HitSongs>
+    </Artist>
+
+    <Artist>
+        <StageName>Dalab</StageName>
+        <RealName>Music Band</RealName>
+        <BirthDate>2017</BirthDate>
+        <Hometown>Việt Nam</Hometown>
+        <HitSongs>
+            <Song>Thanh Xuân</Song>
+            <Song>Từ Ngày Em Đến</Song>
+            <Song>Chuyện Đôi Ta</Song>
+        </HitSongs>
+    </Artist>
+
+    <Artist>
+        <StageName>SOOBIN</StageName>
+        <RealName>Nguyễn Huỳnh Sơn</RealName>
+        <BirthDate>1992-09-10</BirthDate>
+        <Hometown>Hà Nội, Việt Nam</Hometown>
+        <HitSongs>
+            <Song>Phía Sau Một Cô Gái</Song>
+            <Song>Tháng Năm</Song>
+            <Song>Xin Đừng Lặng Im</Song>
+        </HitSongs>
+    </Artist>
+
+    <Artist>
+        <StageName>YOASOBI</StageName>
+        <RealName>Music Band</RealName>
+        <BirthDate>2019</BirthDate>
+        <Hometown>Japan</Hometown>
+        <HitSongs>
+            <Song>Yoru Ni Kakeru</Song>
+            <Song>Tabun</Song>
+            <Song>Ano Yume wo Nazotte</Song>
+        </HitSongs>
+    </Artist>
+
+    <Artist>
+        <StageName>Fujii Kaze</StageName>
+        <RealName>Kaze Fujii</RealName>
+        <BirthDate>1997-06-14</BirthDate>
+        <Hometown>Okayama, Japan</Hometown>
+        <HitSongs>
+            <Song>Shinunoga E-Wa</Song>
+            <Song>Matsuri</Song>
+            <Song>Michiteyuku</Song>
+        </HitSongs>
+    </Artist>
+
+    <Artist>
+        <StageName>Aimer</StageName>
+        <RealName>Hiroyuki Sawano</RealName>
+        <BirthDate>1990-06-09</BirthDate>
+        <Hometown>Kamamoto, Japan</Hometown>
+        <HitSongs>
+            <Song>RE:I AM</Song>
+            <Song>Remind You</Song>
+            <Song>Through My Blood</Song>
+        </HitSongs>
+    </Artist>
+
+    <Artist>
+        <StageName>Kenshi Yonezu</StageName>
+        <RealName>Yonezu Kenshi</RealName>
+        <BirthDate>1991-03-10</BirthDate>
+        <Hometown>Tokushima, Japan</Hometown>
+        <HitSongs>
+            <Song>Lemo</Song>
+            <Song>Kick Back</Song>
+            <Song>Haiiro to Ao</Song>
+        </HitSongs>
+    </Artist>
+
+    <Artist>
+        <StageName>Taylor Swift</StageName>
+        <RealName>Taylor Alision Swift</RealName>
+        <BirthDate>1989-12-13</BirthDate>
+        <Hometown>America</Hometown>
+        <HitSongs>
+            <Song>Love Story</Song>
+            <Song>Enchanted</Song>
+            <Song>Lover</Song>
+        </HitSongs>
+    </Artist>
+
+    <Artist>
+        <StageName>GreyD</StageName>
+        <RealName>Đoàn Thế Lân</RealName>
+        <BirthDate>2000-12-11</BirthDate>
+        <Hometown>Quảng Ngãi, Việt Nam</Hometown>
+        <HitSongs>
+            <Song>Dự Báo Thời Tiết Hôm Nay Mưa</Song>
+            <Song>vaicaunoicokhiennguoithaydoi</Song>
+            <Song>Đưa Em Về Nhà</Song>
+        </HitSongs>
+    </Artist>
+
+    <Artist>
+        <StageName>Phương Ly</StageName>
+        <RealName>Trần Phương Ly</RealName>
+        <BirthDate>1990-10-28</BirthDate>
+        <Hometown>Thanh Hóa, Việt Nam</Hometown>
+        <HitSongs>
+            <Song>Mặt Trời Của Em</Song>
+            <Song>ThichThich</Song>
+            <Song>Anh Là Ngoại Lệ Của Em</Song>
+        </HitSongs>
+    </Artist>
+
+    <Artist>
+        <StageName>Karik</StageName>
+        <RealName>Phạm Hoàng Khoa</RealName>
+        <BirthDate>1989-04-12</BirthDate>
+        <Hometown>Hà Nam, Việt Nam</Hometown>
+        <HitSongs>
+            <Song>Bạn Đời</Song>
+            <Song>Khu Tao Sống</Song>
+            <Song>Hai Thế Giới</Song>
+        </HitSongs>
+    </Artist>
+
+    <Artist>
+        <StageName>Madihu</StageName>
+        <RealName>Chí Phong</RealName>
+        <BirthDate>1994-12-29</BirthDate>
+        <Hometown>Mai Dịch, Hà Nội, Việt Nam</Hometown>
+        <HitSongs>
+            <Song>Vì Anh Đâu Có Biết</Song>
+            <Song>Có Em</Song>
+            <Song>Không Còn Em</Song>
+        </HitSongs>
+    </Artist>
+
+    <Artist>
+        <StageName>Ronboogz</StageName>
+        <RealName>Nguyễn Quốc Việt</RealName>
+        <BirthDate>1995</BirthDate>
+        <Hometown>Thái Bình, Việt Nam</Hometown>
+        <HitSongs>
+            <Song>Lan Man</Song>
+            <Song>Nhắn Nhủ</Song>
+            <Song>Vì Chúng Ta Là Con Người</Song>
+        </HitSongs>
+    </Artist>
+
+    <Artist>
+        <StageName>Bùi Tường Linh</StageName>
+        <RealName>Bùi Trường Linh</RealName>
+        <BirthDate>1999-06-04</BirthDate>
+        <Hometown>Hồ Chí Minh ,Việt Nam</Hometown>
+        <HitSongs>
+            <Song>Yêu Một Người Có Ước Mơ</Song>
+            <Song>Đường Tôi Chở Em Về</Song>
+            <Song>Dại</Song>
+        </HitSongs>
+    </Artist>
+
+    <Artist>
+        <StageName>Mono</StageName>
+        <RealName>Nguyễn Việt Hoàng</RealName>
+        <BirthDate>2000-01-21</BirthDate>
+        <Hometown>Thái Bình, Việt Nam</Hometown>
+        <HitSongs>
+            <Song>Em Là</Song>
+            <Song>Waiting For You</Song>
+            <Song>Em Xinh</Song>
+        </HitSongs>
+    </Artist>
+
+    <Artist>
+        <StageName>W/n</StageName>
+        <RealName>Nguyễn Quý Cao Nguyên</RealName>
+        <BirthDate>1998</BirthDate>
+        <Hometown>Việt Nam</Hometown>
+        <HitSongs>
+            <Song>id072019</Song>
+            <Song>3107-1</Song>
+            <Song>3107-2</Song>
+        </HitSongs>
+    </Artist>
+
+    <Artist>
+        <StageName>Orange</StageName>
+        <RealName>Khương Hoàn Mỹ</RealName>
+        <BirthDate>1997-02-15</BirthDate>
+        <Hometown>Hồ Chí Minh, Việt Nam</Hometown>
+        <HitSongs>
+            <Song>Người Lạ Ơi</Song>
+            <Song>Chân Ái</Song>
+            <Song>Bát Cơm Mặn</Song>
+        </HitSongs>
+    </Artist>
+
+    <Artist>
+        <StageName>Tlinh</StageName>
+        <RealName>Nguyễn Thảo Linh</RealName>
+        <BirthDate>Hà Nội, Việt Nam</BirthDate>
+        <Hometown>2000-10-07</Hometown>
+        <HitSongs>
+            <Song>Nếu Lúc Đó</Song>
+            <Song>Ghệ Iu Dấu</Song>
+            <Song>Gái Độc Thân</Song>
+        </HitSongs>
+    </Artist>
+
+    <Artist>
+        <StageName>Wren Evans</StageName>
+        <RealName>Lê Phan</RealName>
+        <BirthDate>2001-11-19</BirthDate>
+        <Hometown>Hà Nội, Việt Nam</Hometown>
+        <HitSongs>
+            <Song>Tò Te Tí</Song>
+            <Song>Thích Em Hơi Nhiều</Song>
+            <Song>Gặp May</Song>
+        </HitSongs>
+    </Artist>
+
+
+    <Artist>
+        <StageName>Amee</StageName>
+        <RealName>Trần Huyền My</RealName>
+        <BirthDate>2000-03-23</BirthDate>
+        <Hometown>Hà Nội, Việt Nam</Hometown>
+        <HitSongs>
+            <Song>Hai Mươi Hai</Song>
+            <Song>Anh Nhà Ở Đâu Thế</Song>
+            <Song>Từ Thích Thích Thành Thương Thương</Song>
+        </HitSongs>
+    </Artist>
+
+    <Artist>
+        <StageName>Bigdaddy</StageName>
+        <RealName>Trần Tất Vũ</RealName>
+        <BirthDate>1991-08-05</BirthDate>
+        <Hometown>Hà Nội, việt Nam</Hometown>
+        <HitSongs>
+            <Song>Tình Yêu Màu Nắng</Song>
+            <Song>Ngõ Chạm</Song>
+            <Song>Mượn Rượu Tỏ Tình</Song>
+        </HitSongs>
+    </Artist>
+
+</Artists>

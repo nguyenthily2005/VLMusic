@@ -6,6 +6,7 @@ import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.control.TextField;
+import javafx.scene.image.Image;
 import javafx.stage.Stage;
 
 import java.io.IOException;
@@ -67,6 +68,7 @@ public class LogupController {
                 stage.setTitle("Login");
                 stage.setScene(scene);
                 stage.setResizable(false);
+                stage.getIcons().add(new Image(getClass().getResource("/music/img/logoVL.png").toString()));
                 stage.show();
             } catch (IOException e) {
                 e.printStackTrace();
