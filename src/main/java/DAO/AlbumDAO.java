@@ -27,4 +27,18 @@ public class AlbumDAO {
         }
     }
 
+    public List<AlbumsEntity> getAlbumByTitle(String title) {
+        try (Session session = sessionFactory.openSession()) {
+            session.beginTransaction();
+
+            Query<AlbumsEntity> query = session.createQuery("from AlbumsEntity where title = :title", AlbumsEntity.class);
+            query.setParameter("title", title);
+            List<AlbumsEntity> albums = query.list();
+
+            session.getTransaction().commit();
+
+            return albums;
+        }
+    }
+
 }

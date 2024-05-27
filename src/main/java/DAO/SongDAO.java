@@ -73,4 +73,18 @@ public class SongDAO {
             return songs;
         }
     }
+
+    public List<SongsEntity> getSongByTitle(String title) {
+        try (Session session = sessionFactory.openSession()) {
+            session.beginTransaction();
+
+            Query<SongsEntity> query = session.createQuery("from SongsEntity where title LIKE :title", SongsEntity.class);
+            query.setParameter("title", "%" + title + "%");
+            List<SongsEntity> songs = query.list();
+
+            session.getTransaction().commit();
+
+            return songs;
+        }
+    }
 }
