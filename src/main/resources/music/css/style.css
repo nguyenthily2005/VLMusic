@@ -92,12 +92,14 @@
 
 /*menu items*/
 .menu-item {
-    -fx-text-fill: #333;
+    -fx-text-fill: #000;
     -fx-background-color: #f4f4f4;
+    -fx-font-size: 14px;
 }
 
 .menu-item:hover {
-    -fx-background-color: #ddd;
+    -fx-text-fill: #f4f4f4;
+    -fx-background-color: #000;
 }
 .image{
     -fx-border-color: gray;

@@ -68,7 +68,6 @@ public class Utilz {
         String password = "sveq ygfi ajgs exjm";
 
 
-        //session
         Session session = Session.getInstance(properties, new Authenticator() {
             @Override
             protected PasswordAuthentication getPasswordAuthentication() {
@@ -94,7 +93,7 @@ public class Utilz {
     }
 
     public static void cacheData() {
-        //logic
+
 
     }
 
